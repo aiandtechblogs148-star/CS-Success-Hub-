@@ -3,16 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CS Success Hub | Complete Notes for CS & CA Students</title>
-    <meta name="description" content="Get simplified exam-oriented notes for CS Executive subjects. JIGL, Company Law, CAFM, SBILL, eBCIL, CMSL and more.">
+    <title>LocalWeb Pro | Affordable Websites for Small Businesses</title>
     
-    <!-- Tailwind CSS -->
+    <!-- Tailwind CSS (For Modern Styling) -->
     <script src="https://cdn.tailwindcss.com"></script>
     
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     
-    <!-- Font Awesome -->
+    <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <script>
@@ -20,12 +19,14 @@
             theme: {
                 extend: {
                     colors: {
-                        primary: '#1e3a8a', // Dark Blue
-                        secondary: '#3b82f6', // Lighter Blue
-                        accent: '#fbbf24', // Gold for highlights
+                        brand: {
+                            blue: '#2563EB', // Professional Blue
+                            dark: '#1E293B', // Slate Black
+                            light: '#F3F4F6',
+                        }
                     },
                     fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
+                        sans: ['Poppins', 'sans-serif'],
                     }
                 }
             }
@@ -33,235 +34,155 @@
     </script>
 
     <style>
-        .hero-gradient {
-            background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #3b82f6 100%);
-        }
-        .card-hover:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 20px 40px rgba(30, 58, 138, 0.15);
+        /* Custom Styles */
+        .hero-bg {
+            background: linear-gradient(rgba(30, 41, 59, 0.9), rgba(30, 41, 59, 0.8)), url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
         }
         .whatsapp-float {
             position: fixed;
-            bottom: 25px;
-            right: 25px;
-            z-index: 1000;
-            animation: pulse 2s infinite;
+            width: 60px;
+            height: 60px;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px #999;
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.3s;
         }
-        @keyframes pulse {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.1); }
-        }
-        .subject-card:hover {
-            border-color: #3b82f6;
+        .whatsapp-float:hover {
+            transform: scale(1.1);
         }
     </style>
 </head>
-<body class="font-sans text-gray-700 bg-gray-50">
+<body class="font-sans text-gray-700 bg-white">
 
     <!-- Floating WhatsApp Button -->
-    <a href="https://wa.me/919136738475" class="whatsapp-float bg-green-500 text-white w-16 h-16 rounded-full flex items-center justify-center text-3xl shadow-lg hover:bg-green-600 transition" target="_blank">
+    <a href="https://wa.me/919136738475" class="whatsapp-float" target="_blank">
         <i class="fab fa-whatsapp"></i>
     </a>
 
     <!-- Navigation -->
-    <nav class="bg-white shadow-lg fixed w-full z-50 top-0">
+    <nav class="bg-white shadow-md fixed w-full z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-16">
+            <div class="flex justify-between h-20">
                 <div class="flex items-center">
-                    <a href="#" class="flex items-center gap-2">
-                        <i class="fas fa-graduation-cap text-primary text-2xl"></i>
-                        <span class="text-xl font-bold text-primary">CS Success <span class="text-secondary">Hub</span></span>
-                    </a>
+                    <a href="#" class="text-2xl font-bold text-brand-blue">LocalWeb <span class="text-brand-dark">Pro</span></a>
                 </div>
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="#home" class="text-gray-700 hover:text-primary font-medium transition">Home</a>
-                    <a href="#about" class="text-gray-700 hover:text-primary font-medium transition">About</a>
-                    <a href="#subjects" class="text-gray-700 hover:text-primary font-medium transition">Subjects</a>
-                    <a href="#pricing" class="text-gray-700 hover:text-primary font-medium transition">Pricing</a>
-                    <a href="#contact" class="bg-primary text-white px-5 py-2 rounded-lg font-medium hover:bg-blue-800 transition">Contact</a>
+                    <a href="#home" class="text-brand-dark hover:text-brand-blue font-medium transition">Home</a>
+                    <a href="#services" class="text-brand-dark hover:text-brand-blue font-medium transition">Services</a>
+                    <a href="#pricing" class="text-brand-dark hover:text-brand-blue font-medium transition">Pricing</a>
+                    <a href="#about" class="text-brand-dark hover:text-brand-blue font-medium transition">About</a>
+                    <a href="#contact" class="bg-brand-blue text-white px-5 py-2 rounded-full font-medium hover:bg-blue-700 transition">Contact Us</a>
                 </div>
+                <!-- Mobile Menu Button -->
                 <div class="md:hidden flex items-center">
-                    <button id="menuBtn" class="text-gray-700 hover:text-primary">
+                    <button id="mobile-menu-btn" class="text-brand-dark hover:text-brand-blue focus:outline-none">
                         <i class="fas fa-bars text-2xl"></i>
                     </button>
                 </div>
             </div>
         </div>
         <!-- Mobile Menu -->
-        <div id="mobileMenu" class="hidden md:hidden bg-white border-t">
-            <a href="#home" class="block px-4 py-3 text-gray-700 hover:bg-gray-50">Home</a>
-            <a href="#about" class="block px-4 py-3 text-gray-700 hover:bg-gray-50">About</a>
-            <a href="#subjects" class="block px-4 py-3 text-gray-700 hover:bg-gray-50">Subjects</a>
-            <a href="#pricing" class="block px-4 py-3 text-gray-700 hover:bg-gray-50">Pricing</a>
-            <a href="#contact" class="block px-4 py-3 text-primary font-bold">Contact</a>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <a href="#home" class="block px-4 py-3 text-brand-dark hover:bg-brand-light">Home</a>
+            <a href="#services" class="block px-4 py-3 text-brand-dark hover:bg-brand-light">Services</a>
+            <a href="#pricing" class="block px-4 py-3 text-brand-dark hover:bg-brand-light">Pricing</a>
+            <a href="#about" class="block px-4 py-3 text-brand-dark hover:bg-brand-light">About</a>
+            <a href="#contact" class="block px-4 py-3 text-brand-blue font-bold">Contact Us</a>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero-gradient min-h-screen flex items-center justify-center pt-16">
-        <div class="max-w-5xl mx-auto px-4 py-20 text-center">
-            <div class="inline-block bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full text-white mb-6">
-                <i class="fas fa-star text-accent mr-2"></i> #1 Platform for CS Exam Preparation
-            </div>
-            <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-6 leading-tight">
-                Complete Notes & Important PDFs for CS & CA Students – <span class="text-accent">All in One Place</span>
-            </h1>
-            <p class="text-xl text-blue-100 mb-10 max-w-3xl mx-auto">
-                Simplify your exam preparation with our expertly crafted, exam-oriented notes for all CS Executive subjects. 
-                Clear, concise, and designed to help you pass!
-            </p>
+    <section id="home" class="hero-bg h-screen flex items-center justify-center text-center px-4 pt-20">
+        <div class="max-w-3xl mx-auto text-white">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">Affordable Websites for Small Businesses</h1>
+            <p class="text-lg md:text-xl mb-8 text-gray-200">We help salons, clinics, gyms, and local shops grow their business online with professional, mobile-friendly websites.</p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="#pricing" class="bg-accent text-gray-900 px-8 py-4 rounded-xl font-bold text-lg hover:bg-yellow-400 transition shadow-lg flex items-center justify-center gap-2">
-                    <i class="fas fa-file-pdf"></i> View PDF Packs
-                </a>
-                <a href="https://wa.me/919136738475" target="_blank" class="bg-white text-primary px-8 py-4 rounded-xl font-bold text-lg hover:bg-gray-100 transition shadow-lg flex items-center justify-center gap-2">
-                    <i class="fab fa-whatsapp"></i> Contact on WhatsApp
-                </a>
-            </div>
-            <div class="mt-12 flex flex-wrap justify-center gap-8 text-white">
-                <div class="text-center">
-                    <div class="text-3xl font-bold">5000+</div>
-                    <div class="text-blue-200">Students Helped</div>
-                </div>
-                <div class="text-center">
-                    <div class="text-3xl font-bold">50+</div>
-                    <div class="text-blue-200">PDF Notes</div>
-                </div>
-                <div class="text-center">
-                    <div class="text-3xl font-bold">98%</div>
-                    <div class="text-blue-200">Pass Rate</div>
-                </div>
+                <a href="#pricing" class="bg-brand-blue text-white px-8 py-3 rounded-full font-semibold text-lg hover:bg-blue-700 transition shadow-lg">Get Your Website Today</a>
+                <a href="#contact" class="bg-white text-brand-dark px-8 py-3 rounded-full font-semibold text-lg hover:bg-gray-100 transition shadow-lg">Talk to Us</a>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="py-20 bg-white">
-        <div class="max-w-6xl mx-auto px-4">
-            <div class="grid md:grid-cols-2 gap-12 items-center">
-                <div>
-                    <h2 class="text-3xl md:text-4xl font-bold text-primary mb-6">
-                        About CS Success Hub
-                    </h2>
-                    <p class="text-lg text-gray-600 mb-6">
-                        Welcome to <strong>CS Success Hub</strong> – your trusted partner in CS Executive exam preparation.
-                    </p>
-                    <p class="text-gray-600 mb-6">
-                        We understand the challenges faced by CS and CA students. That's why we provide 
-                        <strong>simplified, exam-oriented notes</strong> that make complex topics easy to understand 
-                        and remember.
-                    </p>
-                    <p class="text-gray-600 mb-8">
-                        Our notes are specially designed for CS Executive subjects, focusing on what's most likely 
-                        to appear in exams. We cover:
-                    </p>
-                    <div class="grid grid-cols-2 gap-3">
-                        <div class="flex items-center gap-2 text-gray-700">
-                            <i class="fas fa-check-circle text-green-500"></i> JIGL
-                        </div>
-                        <div class="flex items-center gap-2 text-gray-700">
-                            <i class="fas fa-check-circle text-green-500"></i> Company Law
-                        </div>
-                        <div class="flex items-center gap-2 text-gray-700">
-                            <i class="fas fa-check-circle text-green-500"></i> CAFM
-                        </div>
-                        <div class="flex items-center gap-2 text-gray-700">
-                            <i class="fas fa-check-circle text-green-500"></i> SBILL
-                        </div>
-                        <div class="flex items-center gap-2 text-gray-700">
-                            <i class="fas fa-check-circle text-green-500"></i> eBCIL
-                        </div>
-                        <div class="flex items-center gap-2 text-gray-700">
-                            <i class="fas fa-check-circle text-green-500"></i> CMSL
-                        </div>
-                    </div>
-                </div>
-                <div class="relative">
-                    <div class="bg-gradient-to-br from-primary to-secondary rounded-2xl p-8 text-white">
-                        <div class="text-center">
-                            <i class="fas fa-book-reader text-6xl mb-6 text-accent"></i>
-                            <h3 class="text-2xl font-bold mb-4">Why Choose Our Notes?</h3>
-                            <ul class="space-y-3 text-left">
-                                <li class="flex items-start gap-3">
-                                    <i class="fas fa-arrow-right mt-1 text-accent"></i>
-                                    <span>Exam-oriented content based on recent trends</span>
-                                </li>
-                                <li class="flex items-start gap-3">
-                                    <i class="fas fa-arrow-right mt-1 text-accent"></i>
-                                    <span>Simplified language for easy understanding</span>
-                                </li>
-                                <li class="flex items-start gap-3">
-                                    <i class="fas fa-arrow-right mt-1 text-accent"></i>
-                                    <span>Important case studies and questions covered</span>
-                                </li>
-                                <li class="flex items-start gap-3">
-                                    <i class="fas fa-arrow-right mt-1 text-accent"></i>
-                                    <span>Instant PDF download after payment</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Subjects Section -->
-    <section id="subjects" class="py-20 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4">
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-brand-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">Our Subject Coverage</h2>
-                <p class="text-gray-600 max-w-2xl mx-auto">Get comprehensive notes for all major CS Executive subjects</p>
+                <h2 class="text-3xl md:text-4xl font-bold text-brand-dark mb-4">Our Services</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Everything you need to establish your business online.</p>
             </div>
-            
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Subject Cards -->
-                <div class="subject-card bg-white rounded-xl p-6 border-2 border-transparent shadow-md card-hover transition duration-300">
-                    <div class="flex items-center gap-3 mb-4">
-                        <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
-                            <i class="fas fa-gavel text-primary text-xl"></i>
-                        </div>
-                        <h3 class="text-xl font-bold text-gray-800">JIGL</h3>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition text-center">
+                    <div class="w-16 h-16 bg-blue-100 text-brand-blue rounded-full flex items-center justify-center mx-auto mb-6 text-2xl">
+                        <i class="fas fa-laptop-code"></i>
                     </div>
-                    <p class="text-gray-600 text-sm mb-4">Jurisprudence, Interpretation & General Laws</p>
-                    <div class="space-y-2">
-                        <a href="#contact" class="block text-center py-2 bg-gray-100 rounded-lg text-sm font-medium hover:bg-primary hover:text-white transition">Important Questions PDF</a>
-                        <a href="#contact" class="block text-center py-2 bg-gray-100 rounded-lg text-sm font-medium hover:bg-primary hover:text-white transition">Case Study PDF</a>
-                        <a href="#contact" class="block text-center py-2 bg-gray-100 rounded-lg text-sm font-medium hover:bg-primary hover:text-white transition">Section-wise Notes</a>
-                        <a href="#contact" class="block text-center py-2 bg-yellow-100 rounded-lg text-sm font-medium text-yellow-800 hover:bg-yellow-200 transition">Fast Revision Notes</a>
+                    <h3 class="text-xl font-bold mb-3">Website Creation</h3>
+                    <p class="text-gray-600">Custom, fast, and mobile-friendly websites designed to convert visitors into customers.</p>
+                </div>
+                <!-- Service 2 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition text-center">
+                    <div class="w-16 h-16 bg-blue-100 text-brand-blue rounded-full flex items-center justify-center mx-auto mb-6 text-2xl">
+                        <i class="fas fa-map-marker-alt"></i>
                     </div>
+                    <h3 class="text-xl font-bold mb-3">Google Business Setup</h3>
+                    <p class="text-gray-600">We set up and verify your Google My Business profile so customers can find you on Maps.</p>
+                </div>
+                <!-- Service 3 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition text-center">
+                    <div class="w-16 h-16 bg-blue-100 text-brand-blue rounded-full flex items-center justify-center mx-auto mb-6 text-2xl">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Maintenance</h3>
+                    <p class="text-gray-600">Don't worry about updates. We handle hosting, security, and content updates for you.</p>
+                </div>
+                <!-- Service 4 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition text-center">
+                    <div class="w-16 h-16 bg-blue-100 text-brand-blue rounded-full flex items-center justify-center mx-auto mb-6 text-2xl">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Basic SEO</h3>
+                    <p class="text-gray-600">We optimize your site so local customers can find you when they search for your services.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-brand-dark mb-4">Simple Pricing</h2>
+                <p class="text-gray-600">No hidden fees. Choose the package that fits your needs.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <!-- Starter -->
+                <div class="border border-gray-200 rounded-2xl p-8 hover:border-brand-blue transition relative">
+                    <h3 class="text-xl font-bold text-gray-500 mb-2">Starter Website</h3>
+                    <div class="text-4xl font-bold text-brand-dark mb-6">₹5,999</div>
+                    <ul class="space-y-3 mb-8 text-gray-600">
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> 1 Page Website</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Mobile Responsive</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Contact Form</li>
+                        <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> WhatsApp Integration</li>
+                    </ul>
+                    <a href="#contact" class="block w-full py-3 text-center border border-brand-blue text-brand-blue rounded-lg font-semibold hover:bg-brand-blue hover:text-white transition">Choose Starter</a>
                 </div>
 
-                <div class="subject-card bg-white rounded-xl p-6 border-2 border-transparent shadow-md card-hover transition duration-300">
-                    <div class="flex items-center gap-3 mb-4">
-                        <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
-                            <i class="fas fa-building text-primary text-xl"></i>
-                        </div>
-                        <h3 class="text-xl font-bold text-gray-800">Company Law</h3>
-                    </div>
-                    <p class="text-gray-600 text-sm mb-4">Companies Act 2013 & Corporate Laws</p>
-                    <div class="space-y-2">
-                        <a href="#contact" class="block text-center py-2 bg-gray-100 rounded-lg text-sm font-medium hover:bg-primary hover:text-white transition">Important Questions PDF</a>
-                        <a href="#contact" class="block text-center py-2 bg-gray-100 rounded-lg text-sm font-medium hover:bg-primary hover:text-white transition">Case Study PDF</a>
-                        <a href="#contact" class="block text-center py-2 bg-gray-100 rounded-lg text-sm font-medium hover:bg-primary hover:text-white transition">Section-wise Notes</a>
-                        <a href="#contact" class="block text-center py-2 bg-yellow-100 rounded-lg text-sm font-medium text-yellow-800 hover:bg-yellow-200 transition">Fast Revision Notes</a>
-                    </div>
-                </div>
-
-                <div class="subject-card bg-white rounded-xl p-6 border-2 border-transparent shadow-md card-hover transition duration-300">
-                    <div class="flex items-center gap-3 mb-4">
-                        <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
-                            <i class="fas fa-chart-line text-primary text-xl"></i>
-                        </div>
-                        <h3 class="text-xl font-bold text-gray-800">CAFM</h3>
-                    </div>
-                    <p class="text-gray-600 text-sm mb-4">Corporate & Management Accounting</p>
-                    <div class="space-y-2">
-                        <a href="#contact" class="block text-center py-2 bg-gray-100 rounded-lg text-sm font-medium hover:bg-primary hover:text-white transition">Important Questions PDF</a>
-                        <a href="#contact" class="block text-center py-2 bg-gray-100 rounded-lg text-sm font-medium hover:bg-primary hover:text-white transition">Case Study PDF</a>
-                        <a href="#contact" class="block text-center py-2 bg-gray-100 rounded-lg text-sm font-medium hover:bg-primary hover:text-white transition">Section-wise Notes</a>
-                        <a href="#contact" class="block text-center py-2 bg-yellow-100 rounded-lg text-sm font-medium text-yellow-800 hover:bg-yellow-200 transition">Fast Revision Notes</a>
-                    </div>
-                </div>
-
-                <div class="subject-card bg-white rounded-xl p-6 border-2
+                <!-- Business (Highlighted) -->
+                <div class="border-2 border-brand-blue rounded-2xl p-8 shadow-xl relative transform md:-translate-y-4 bg-white">
+                    <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-brand-blue text-white px-4 py-1 rounded-full text-sm font-bold">Most Popular</div>
+                    <h3 class="text-xl font-bold text-brand-blue mb-2">Business Website</h3>
+                    <div class="text-4xl font-bold text-brand-dark mb-6">₹12,999</div>
+                    <ul class="space-y-3 mb-8 text-gray-600">
+                       
