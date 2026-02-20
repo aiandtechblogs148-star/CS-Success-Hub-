@@ -872,3 +872,196 @@
         }
     });
 </script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS Success Hub | Complete Notes for CS & CA Students</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1e3a8a',
+                        secondary: '#3b82f6',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Poppins', sans-serif; }
+        .hero-gradient { background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 50%, #3b82f6 100%); }
+        .whatsapp-float { position: fixed; bottom: 25px; right: 25px; z-index: 1000; animation: pulse 2s infinite; }
+        @keyframes pulse { 0% { transform: scale(1); } 50% { transform: scale(1.1); } 100% { transform: scale(1); } }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- WhatsApp Float -->
+    <a href="https://wa.me/919136738475" class="whatsapp-float bg-green-500 text-white w-16 h-16 rounded-full flex items-center justify-center text-3xl shadow-lg hover:bg-green-600">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50 top-0">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#" class="flex items-center gap-2">
+                <div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
+                    <i class="fas fa-graduation-cap text-white"></i>
+                </div>
+                <span class="text-xl font-bold text-primary">CS Success<span class="text-secondary">Hub</span></span>
+            </a>
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="#home" class="text-gray-700 hover:text-primary font-medium">Home</a>
+                <a href="#about" class="text-gray-700 hover:text-primary font-medium">About</a>
+                <a href="#subjects" class="text-gray-700 hover:text-primary font-medium">Subjects</a>
+                <a href="#pricing" class="text-gray-700 hover:text-primary font-medium">Pricing</a>
+                <a href="#contact" class="bg-primary text-white px-5 py-2 rounded-lg hover:bg-blue-800">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-gradient min-h-screen flex items-center pt-20">
+        <div class="max-w-7xl mx-auto px-4 py-20 text-white text-center">
+            <div class="inline-block bg-white/20 px-4 py-2 rounded-full text-sm mb-6">
+                <i class="fas fa-star text-yellow-400 mr-2"></i> #1 Platform for CS Students
+            </div>
+            <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">Complete Notes & Important PDFs for CS & CA Students – All in One Place</h1>
+            <p class="text-lg mb-8 text-blue-100 max-w-2xl mx-auto">Get simplified, exam-oriented notes for CS Executive subjects like JIGL, Company Law, CAFM, SBILL, EBCIL & CMSL. Score high with our carefully curated study materials.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#pricing" class="bg-white text-primary px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition shadow-lg">
+                    <i class="fas fa-book-open mr-2"></i> View PDF Packs
+                </a>
+                <a href="https://wa.me/919136738475" class="bg-green-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-green-600 transition shadow-lg">
+                    <i class="fab fa-whatsapp mr-2"></i> Contact on WhatsApp
+                </a>
+            </div>
+            <div class="grid grid-cols-3 gap-6 mt-12 pt-8 border-t border-white/20 max-w-lg mx-auto">
+                <div><div class="text-3xl font-bold">5000+</div><div class="text-blue-200 text-sm">Students</div></div>
+                <div><div class="text-3xl font-bold">50+</div><div class="text-blue-200 text-sm">PDFs</div></div>
+                <div><div class="text-3xl font-bold">4.9★</div><div class="text-blue-200 text-sm">Rating</div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">About CS Success Hub</h2>
+                <div class="w-20 h-1 bg-secondary mx-auto"></div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Simplified Notes for CS Executive Success</h3>
+                    <p class="text-gray-600 mb-4 leading-relaxed">Welcome to <strong>CS Success Hub</strong> – your trusted partner in CS Executive exam preparation. We understand the challenges faced by Company Secretary students, and we're here to make your journey easier.</p>
+                    <p class="text-gray-600 mb-6 leading-relaxed">Our founder is a qualified Company Secretary and CA student who has been providing <span class="text-primary font-semibold">simplified, exam-oriented notes</span> for CS Executive subjects. We specialize in making complex concepts easy to understand.</p>
+                    <div class="space-y-3">
+                        <div class="flex items-center gap-3"><i class="fas fa-check-circle text-green-500"></i><span>Expertly curated content by qualified professionals</span></div>
+                        <div class="flex items-center gap-3"><i class="fas fa-check-circle text-green-500"></i><span>Focus on important questions and case studies</span></div>
+                        <div class="flex items-center gap-3"><i class="fas fa-check-circle text-green-500"></i><span>Regular updates as per new syllabus</span></div>
+                        <div class="flex items-center gap-3"><i class="fas fa-check-circle text-green-500"></i><span>Instant delivery via WhatsApp/Email</span></div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="bg-blue-50 p-6 rounded-xl text-center"><i class="fas fa-book text-4xl text-primary mb-3"></i><h4 class="font-bold">JIGL</h4><p class="text-sm text-gray-600">Jurisprudence</p></div>
+                    <div class="bg-blue-50 p-6 rounded-xl text-center"><i class="fas fa-landmark text-4xl text-primary mb-3"></i><h4 class="font-bold">Company Law</h4><p class="text-sm text-gray-600">Corporate Laws</p></div>
+                    <div class="bg-blue-50 p-6 rounded-xl text-center"><i class="fas fa-chart-line text-4xl text-primary mb-3"></i><h4 class="font-bold">CAFM</h4><p class="text-sm text-gray-600">Corporate Finance</p></div>
+                    <div class="bg-blue-50 p-6 rounded-xl text-center"><i class="fas fa-file-invoice text-4xl text-primary mb-3"></i><h4 class="font-bold">SBILL</h4><p class="text-sm text-gray-600">Securities & Bill</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subjects Section -->
+    <section id="subjects" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">Our Subjects</h2>
+                <p class="text-gray-600">Comprehensive study materials for all CS Executive subjects</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- JIGL -->
+                <div class="bg-white rounded-xl p-6 shadow-sm hover:shadow-xl transition border-t-4 border-primary">
+                    <h3 class="text-xl font-bold text-primary mb-2">JIGL</h3>
+                    <p class="text-gray-600 text-sm mb-4">Jurisprudence & Interpretation of Legal Texts</p>
+                    <div class="space-y-2">
+                        <button class="w-full text-left px-4 py-2 bg-gray-50 rounded-lg text-sm hover:bg-primary hover:text-white transition"><i class="fas fa-file-pdf mr-2"></i> Important Questions PDF</button>
+                        <button class="w-full text-left px-4 py-2 bg-gray-50 rounded-lg text-sm hover:bg-primary hover:text-white transition"><i class="fas fa-file-contract mr-2"></i> Case Study PDF</button>
+                        <button class="w-full text-left px-4 py-2 bg-gray-50 rounded-lg text-sm hover:bg-primary hover:text-white transition"><i class="fas fa-list mr-2"></i> Section-wise Notes</button>
+                        <button class="w-full text-left px-4 py-2 bg-gray-50 rounded-lg text-sm hover:bg-primary hover:text-white transition"><i class="fas fa-bolt mr-2"></i> Fast Revision Notes</button>
+                    </div>
+                </div>
+                <!-- Company Law -->
+                <div class="bg-white rounded-xl p-6 shadow-sm hover:shadow-xl transition border-t-4 border-primary">
+                    <h3 class="text-xl font-bold text-primary mb-2">Company Law</h3>
+                    <p class="text-gray-600 text-sm mb-4">Corporate and Management Laws</p>
+                    <div class="space-y-2">
+                        <button class="w-full text-left px-4 py-2 bg-gray-50 rounded-lg text-sm hover:bg-primary hover:text-white transition"><i class="fas fa-file-pdf mr-2"></i> Important Questions PDF</button>
+                        <button class="w-full text-left px-4 py-2 bg-gray-50 rounded-lg text-sm hover:bg-primary hover:text-white transition"><i class="fas fa-file-contract mr-2"></i> Case Study PDF</button>
+                        <button class="w-full text-left px-4 py-2 bg-gray-50 rounded-lg text-sm hover:bg-primary hover:text-white transition"><i class="fas fa-list mr-2"></i> Section-wise Notes</button>
+                        <button class="w-full text-left px-4 py-2 bg-gray-50 rounded-lg text-sm hover:bg-primary hover:text-white transition"><i class="fas fa-bolt mr-2"></i> Fast Revision Notes</button>
+                    </div>
+                </div>
+                <!-- CAFM -->
+                <div class="bg-white rounded-xl p-6 shadow-sm hover:shadow-xl transition border-t-4 border-primary">
+                    <h3 class="text-xl font-bold text-primary mb-2">CAFM</h3>
+                    <p class="text-gray-600 text-sm mb-4">Corporate Accounting & Financial Management</p>
+                    <div class="space-y-2">
+                        <button class="w-full text-left px-4 py-2 bg-gray-50 rounded-lg text-sm hover:bg-primary hover:text-white transition"><i class="fas fa-file-pdf mr-2"></i> Important Questions PDF</button>
+                        <button class="w-full text-left px-4 py-2 bg-gray-50 rounded-lg text-sm hover:bg-primary hover:text-white transition"><i class="fas fa-file-contract mr-2"></i> Case Study PDF</button>
+                        <button class="w-full text-left px-4 py-2 bg-gray-50 rounded-lg text-sm hover:bg-primary hover:text-white transition"><i class="fas fa-list mr-2"></i> Section-wise Notes</button>
+                        <button class="w-full text-left px-4 py-2 bg-gray-50 rounded-lg text-sm hover:bg-primary hover:text-white transition"><i class="fas fa-bolt mr-2"></i> Fast Revision Notes</button>
+                    </div>
+                </div>
+                <!-- SBILL -->
+                <div class="bg-white rounded-xl p-6 shadow-sm hover:shadow-xl transition border-t-4 border-primary">
+                    <h3 class="text-xl font-bold text-primary mb-2">SBILL</h3>
+                    <p class="text-gray-600 text-sm mb-4">Securities & Bill Laws</p>
+                    <div class="space-y-2">
+                        <button class="w-full text-left px-4 py-2 bg-gray-50 rounded-lg text-sm hover:bg-primary hover:text-white transition"><i class="fas fa-file-pdf mr-2"></i> Important Questions PDF</button>
+                        <button class="w-full text-left px-4 py-2 bg-gray-50 rounded-lg text-sm hover:bg-primary hover:text-white transition"><i class="fas fa-file-contract mr-2"></i> Case Study PDF</button>
+                        <button class="w-full text-left px-4 py-2 bg-gray-50 rounded-lg text-sm hover:bg-primary hover:text-white transition"><i class="fas fa-list mr-2"></i> Section-wise Notes</button>
+                        <button class="w-full text-left px-4 py-2 bg-gray-50 rounded-lg text-sm hover:bg-primary hover:text-white transition"><i class="fas fa-bolt mr-2"></i> Fast Revision Notes</button>
+                    </div>
+                </div>
+                <!-- EBCIL -->
+                <div class="bg-white rounded-xl p-6 shadow-sm hover:shadow-xl transition border-t-4 border-primary">
+                    <h3 class="text-xl font-bold text-primary mb-2">EBCIL</h3>
+                    <p class="text-gray-600 text-sm mb-4">Economic & Business Environment</p>
+                    <div class="space-y-2">
+                        <button class="w-full text-left px-4 py-2 bg-gray-50 rounded-lg text-sm hover:bg-primary hover:text-white transition"><i class="fas fa-file-pdf mr-2"></i> Important Questions PDF</button>
+                        <button class="w-full text-left px-4 py-2 bg-gray-50 rounded-lg text-sm hover:bg-primary hover:text-white transition"><i class="fas fa-file-contract mr-2"></i> Case Study PDF</button>
+                        <button class="w-full text-left px-4 py-2 bg-gray-50 rounded-lg text-sm hover:bg-primary hover:text-white transition"><i class="fas fa-list mr-2"></i> Section-wise Notes</button>
+                        <button class="w-full text-left px-4 py-2 bg-gray-50 rounded-lg text-sm hover:bg-primary hover:text-white transition"><i class="fas fa-bolt mr-2"></i> Fast Revision Notes</button>
+                    </div>
+                </div>
+                <!-- CMSL -->
+                <div class="bg-white rounded-xl p-6 shadow-sm hover:shadow-xl transition border-t-4 border-primary">
+                    <h3 class="text-xl font-bold text-primary mb-2">CMSL</h3>
+                    <p class="text-gray-600 text-sm mb-4">Company Secretaryship & Labour Laws</p>
+                    <div class="space-y-2">
+                        <button class="w-full text-left px-4 py-2 bg-gray-50 rounded-lg text-sm hover:bg-primary hover:text-white transition"><i class="fas fa-file-pdf mr-2"></i> Important Questions PDF</button>
+                        <button class="w-full text-left px-4 py-2 bg-gray-50 rounded-lg text-sm hover:bg-primary hover:text-white transition"><i class="fas fa-file-contract mr-2"></i> Case Study PDF</button>
+                        <button class="w-full text-left px-4 py-2 bg-gray-50 rounded-lg text-sm hover:bg-primary hover:text-white transition"><i class="fas fa-list mr-2"></i> Section-wise Notes</button>
+                        <button class="w-full text-left px-4 py-2 bg-gray-50 rounded-lg text-sm hover:bg-primary hover:text-white transition"><i class="fas fa-bolt mr-2"></i> Fast Revision Notes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">Choose Your PDF Pack</h2>
+                <p class="text-gray-600">Get access to premium study materials at affordable prices</p>
+            </div>
+            <div class="grid md:grid
